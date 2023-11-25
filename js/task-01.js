@@ -8,3 +8,4 @@ for (const item of itemsOfCategories) {
     const elementsOfCategorie = item.querySelectorAll("li");
     console.log(`Elements: ${elementsOfCategorie.length}`);
 }
+
