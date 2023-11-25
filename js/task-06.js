@@ -44,7 +44,9 @@ createBtn.addEventListener("click", createBoxes);
 
 destroyBtn.addEventListener("click", destroyBoxes);
 
-
+createBtn.classList.add("create-btn");
+destroyBtn.classList.add("destroy-btn");
+input.classList.add("controls-input");
 
 
 //перевіряємо структуру HTML-документа, чи правильно виконана вкладеність і задані класи

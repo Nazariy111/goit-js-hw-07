@@ -19,3 +19,16 @@ function handleSubmit(event) {
     console.log(loginArray);
     form.reset();
 }
+
+const inputs = document.querySelectorAll("input");
+for (const input of inputs) {
+    input.classList.add("form-input");
+}
+
+const formBtn = document.querySelector("button");
+formBtn.classList.add("form-btn");
+
+const style = document.querySelector("style");
+style.remove();
+
+console.log(document);

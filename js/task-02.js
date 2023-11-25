@@ -23,6 +23,8 @@ for (const image of images) {
   imaging.classList.add("gallery-image");
   imaging.src = image.url;
   imaging.alt = image.alt;
+  imaging.width = 360;
+  imaging.height = 300;
 
   gallery.append(listItem);
   listItem.append(imaging);

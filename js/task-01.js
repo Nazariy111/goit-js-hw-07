@@ -18,4 +18,5 @@ for (const item of itemsOfCategories) {
 
 }
 
+// перевіряємо структуру, чи правильно все працює
 console.log(document);
