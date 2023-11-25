@@ -8,7 +8,7 @@ const boxes = document.querySelector("#boxes");
 const createBtn = document.querySelector('button[data-create]');
 const destroyBtn = document.querySelector('button[data-destroy]');
 const input = document.querySelector("input");
-let boxSize = 30; 
+let boxSize = 0; 
 let amount = 0;
 
 const destroyBoxes = () => {
@@ -21,6 +21,8 @@ const destroyBoxes = () => {
 
 const createBoxes = () => {
   if (amount > 0 && amount <= 100) {
+    destroyBoxes();
+    boxSize = 30;
     for (let i = 1; i <= amount; i += 1) {
       const divBox = document.createElement("div");
       divBox.classList.add("div-box");
@@ -31,8 +33,9 @@ const createBoxes = () => {
       boxSize += 10;
     }
   }
-  boxSize = 30;
+  boxSize = 0;
   input.value = "";
+  amount = 0;
 }
 
 input.addEventListener("blur", (event) => amount = Number(event.currentTarget.value));
