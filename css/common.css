@@ -22,7 +22,7 @@ button {
   padding: 8px 12px;
   cursor: pointer;
 }
-/* ========1 task========== */
+/* ========task 1========== */
 
 ul, li {
   list-style-type: none;
@@ -47,7 +47,6 @@ ul, li {
   height: 40px;
   color: #2E2F42;
   font-family: Montserrat, sans-serif;
-  font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
   border-radius: 4px;
@@ -107,7 +106,14 @@ input#name-input {
   justify-content: center;
   align-items: center;
   display: flex;
-  
+}
+
+input#name-input:hover {
+  border: 1px solid #000;
+}
+
+input#name-input:active {
+  border: 1px solid #808080;
 }
 
 input#name-input::placeholder {
@@ -135,9 +141,6 @@ input#name-input::placeholder {
   font-family: Montserrat, sans-serif;
   line-height: 1.5;
   letter-spacing: 0.04em;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
   margin-bottom: 0;
   display: flex;
   flex-direction: column;
@@ -154,9 +157,6 @@ input#name-input::placeholder {
   margin-top: 8px;
   color: #2E2F42;
   font-family: Montserrat;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.04em;
   display: flex;
@@ -184,8 +184,6 @@ input#name-input::placeholder {
   min-width: 86px;
   color: #FFF;
   font-family: Montserrat;
-  font-size: 16px;
-  font-style: normal;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.04em;
@@ -238,9 +236,6 @@ input#name-input::placeholder {
 .widget p {
   color: #2E2F42;
   font-family: Montserrat;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.04em;
   font: inherit;
@@ -295,8 +290,6 @@ input#name-input::placeholder {
   background: #4E75FF;
   color: #FFF;
   font-family: Montserrat;
-  font-size: 16px;
-  font-style: normal;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.04em;
@@ -320,8 +313,6 @@ input#name-input::placeholder {
   background: #FF4E4E;
   color: #FFF;
   font-family: Montserrat;
-  font-size: 16px;
-  font-style: normal;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.04em;

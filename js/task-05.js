@@ -18,4 +18,5 @@ btn.addEventListener("click", handleClick);
 const style = document.querySelector("style");
 style.remove();
 
+//перевіряємо структуру документа після внесених змін
 console.log(document);

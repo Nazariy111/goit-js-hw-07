@@ -31,4 +31,6 @@ formBtn.classList.add("form-btn");
 const style = document.querySelector("style");
 style.remove();
 
+
+//перевіряємо структуру HTML-документа, чи правильно задані класи
 console.log(document);

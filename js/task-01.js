@@ -15,8 +15,8 @@ for (const item of itemsOfCategories) {
     for (const element of elementsOfCategorie) {
         element.classList.add("item-li");
     }
-
 }
+
 
 // перевіряємо структуру, чи правильно все працює
 console.log(document);
