@@ -4,17 +4,20 @@ function getRandomHexColor() {
     .padStart(6, 0)}`;
 }
 
-const widget = document.querySelector(".widget");
-const btn = document.querySelector(".change-color");
-const color = document.querySelector(".color");
+const body = document.querySelector("body");
+const changeColorButton = document.querySelector(".change-color");
+const colorSpan = document.querySelector(".color");
 
 const handleClick = () => {
-  widget.style.backgroundColor = getRandomHexColor();
-  color.textContent = widget.style.backgroundColor;
+  body.style.backgroundColor = getRandomHexColor();
+  colorSpan.textContent = body.style.backgroundColor;
 }
 
-btn.addEventListener("click", handleClick);
+changeColorButton.addEventListener("click", handleClick);
 
+//про видалення тегу style - я продивився, що в ньому є і зробив висновок, що легше 
+// видалити його ніж видаляти зайві рядки в ньому, які заважали стилізувати по ТЗ.
+//якщо можна, підкажіть, будь-ласка, як це треба було б зробити, щоб було ідеально. Дякую!
 const style = document.querySelector("style");
 style.remove();
 

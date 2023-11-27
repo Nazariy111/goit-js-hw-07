@@ -14,21 +14,10 @@ const images = [
 ];
 
 const gallery = document.querySelector(".gallery");
+const markup = images
+  .map((image) => `<li class="gallery-item"><img class="gallery-image" src="${image.url}" alt="${image.alt}" width="360" height="300"></li>`)
+  .join("");
 
-for (const image of images) {
-  const listItem = document.createElement("li");
-  listItem.classList.add("gallery-item");
+gallery.innerHTML = markup;
 
-  const imaging = document.createElement("img");
-  imaging.classList.add("gallery-image");
-  imaging.src = image.url;
-  imaging.alt = image.alt;
-  imaging.width = 360;
-  imaging.height = 300;
 
-  gallery.append(listItem);
-  listItem.append(imaging);
-}
-
-//перевіряємо структуру HTML-документа, чи правильно виконана вкладеність і задані класи
-console.log(document);

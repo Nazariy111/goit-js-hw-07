@@ -4,11 +4,8 @@ const title = document.querySelector("h1");
 title.classList.add("title-hello");
 
 input.addEventListener("input", (event) => {
-    output.textContent = event.currentTarget.value;
-    output.textContent = output.textContent.trim();
-    if (output.textContent === "") {
-        output.textContent = "Anonymous";
-    }
+    const trimmedValue = event.currentTarget.value.trim();
+    output.textContent = trimmedValue === "" ? "Anonymous" : trimmedValue;
 });
 
 
